@@ -1,0 +1,334 @@
+@font-face {
+  font-family: "Hoefler";
+  src: url("./star_picture/Hoefler-Text.ttf");
+}
+
+
+
+
+
+body {
+  background-color: #1b0a34;
+  overflow:hidden;
+  margin:0;
+    }
+
+#background{
+  position:relative;
+  background-image: url(./star_picture/background-07.png);
+  background-size: contain;
+  background-position:right bottom;
+  height:100vh;
+  width:100vw;
+  background-repeat:no-repeat;
+}
+
+
+#text,.print{
+  text-align:justify;
+  font-family: "Hoefler";
+  color:white;
+  cursor: default;
+  margin:0;
+  transition:0.5s;
+  font-size:2.5vh;
+}
+
+.print{
+  position:absolute;
+}
+
+
+#home,#choose_page{
+  position:absolute;
+  top:55vh;
+  left:3.5vw;
+  height:45vh;
+  width:45vw;
+  transition:0.5s;
+  z-index:2;
+}
+.home_title{
+  text-shadow: 0px 0px 10px white;
+  letter-spacing:0.2vw;
+  font-weight:200;
+  font-size:10vh;
+  margin:0;
+}
+
+.home_text1{
+  font-size:3.5vh;
+  margin:0;
+  
+  text-decoration:none;
+}
+/*.home_text1{
+  text-decoration:overline;
+}*/
+
+#choose_page{
+  text-shadow: 0px 0px 10px white;
+  /*letter-spacing:0.2vw;*/
+  word-spacing:1em;
+  width:55vw;
+  display:none;
+  opacity:0;
+}
+.choose_text{
+  margin:0;
+  font-size:70px;/*10vh*/
+}
+
+.star_text{
+  font-size:2.5vh;
+  line-height: 3vh;　　　          　
+}
+
+
+#star_page{
+  position:relative;
+  top: 25vh;
+  left:3.5vw;
+  height: 75vh;
+  width:45vw;
+  margin: 0px; 
+}
+
+#star1_page,#star2_page,#star3_page,#star4_page,#star5_page,#star6_page,#star7_page,#star8_page,#star9_page,#star10_page,#star11_page,#star12_page{
+  position:absolute;
+  top: 8vh;
+  transition:1s;
+  display:none;
+  opacity:0;
+}
+
+
+
+.Zodiac1,.Zodiac2{  /*the Zodiac picture setting*/
+  background-position:center;
+  background-size: 100%;
+  position:absolute;
+  top:-33vh;
+  left:-8vw;
+  background-size: contain;
+  height:35vh;
+  width:35vw;
+  background-repeat:no-repeat;
+}
+
+.Zodiac2{   /*the second Zodiac picture setting*/
+  top:-30vh;
+  left:20vw;
+  height:30vh;
+  width:30vw;
+}
+
+.Aquarius1{ background-image: url(./star_picture/Zodiac/aquarius1.png);}
+.Aquarius2{ background-image: url(./star_picture/Zodiac/aquarius2.png);}
+.Cancer1{ background-image: url(./star_picture/Zodiac/cancer1.png);}
+.Cancer2{ background-image: url(./star_picture/Zodiac/cancer2.png);}
+.Gemini1{ background-image: url(./star_picture/Zodiac/gemini1.png);}
+.Gemini2{ background-image: url(./star_picture/Zodiac/gemini2.png);}
+.Pisces1{ background-image: url(./star_picture/Zodiac/pisces1.png);}
+.Pisces2{ background-image: url(./star_picture/Zodiac/pisces2.png);}
+.Aries1{ background-image: url(./star_picture/Zodiac/aries1.png);}
+.Aries2{ background-image: url(./star_picture/Zodiac/aries2.png);}
+.Taurus1{ background-image: url(./star_picture/Zodiac/taurus1.png);}
+.Taurus2{ background-image: url(./star_picture/Zodiac/taurus2.png);}
+.Virgo1{ background-image: url(./star_picture/Zodiac/virgo1.png);}
+.Virgo2{ background-image: url(./star_picture/Zodiac/virgo2.png);}
+.Sagittarius1{ background-image: url(./star_picture/Zodiac/sagittarius1.png);}
+.Sagittarius2{ background-image: url(./star_picture/Zodiac/sagittarius2.png);}
+.Capricorn1{ background-image: url(./star_picture/Zodiac/capricorn1.png);}
+.Capricorn2{ background-image: url(./star_picture/Zodiac/capricorn2.png);}
+.Libra1{ background-image: url(./star_picture/Zodiac/libra1.png);}
+.Libra2{ background-image: url(./star_picture/Zodiac/libra2.png);}
+.Scorpio1{ background-image: url(./star_picture/Zodiac/scorpio1.png);}
+.Scorpio2{ background-image: url(./star_picture/Zodiac/scorpio2.png);}
+.Leo1{ background-image: url(./star_picture/Zodiac/leo1.png);}
+.Leo2{ background-image: url(./star_picture/Zodiac/leo2.png);}
+
+#rocket{
+  background-position:top;
+  background-size: 65%;
+  position:absolute;
+  top:38vh;
+  left:-128vw;
+  background-image: url(./star_picture/rocket_smokeeffect.png);
+  height:400vh;
+  width:400vw;
+  background-repeat:no-repeat;
+  z-index:1;
+  transition:0.05s;
+}
+
+#bottom{
+  background-position:center;
+  background-size: contain;
+  position:absolute;
+  margin:5px 0 0;
+  background-image: url(./star_picture/bottom.png);
+  height:4.5vh;
+  width:15vh;
+  background-repeat:no-repeat;
+  z-index:3;
+  cursor:pointer;
+  transition:1s;
+}
+
+.star_type1,.star_type2,.star_type3{
+  background-position:center;
+  background-size: 100%;
+  position:absolute;
+  background-image: url(./star_picture/star8.png);
+  height:6vh; 
+  width:6vh;
+  background-repeat:no-repeat;
+  opacity:0.5;
+  z-index:2;/*upper than rocker(1)*/
+  cursor:pointer;
+  transition:0.5s; 
+}
+.star_type2{
+  background-image: url(./star_picture/star9.png);
+  height:3.5vh;/*0.9em*/ 
+  width:3.5vh;
+}
+.star_type3{
+  background-image: url(./star_picture/star7.png);
+  height:4vh; /*2.1em*/
+  width:4vh;
+}
+
+#twelve_star{
+  transition:0.5s;
+}
+
+.star{
+  -webkit-filter:hue-rotate(240deg);
+  height:6vh; 
+  width:6vh;
+  top:1vh;
+  right:1vh;
+  display:none;
+  opacity:0;
+  transition:0.5s;
+}
+
+
+.star1{
+  top:7.2vh;
+  left:6.6vw;
+}
+.star2{
+  top:23.5vh;
+  left:20.5vw;
+}
+.star3{
+  top:25.1vh;
+  left:10vw;
+}
+.star4{
+  top:14vh;
+  left:16.3vw;
+}
+.star5{
+  top:6.5vh;
+  left:26vw;
+}
+.star6{
+  top:6vh;
+  left:38.2vw;
+}
+.star7{
+  top:18.5vh;
+  left:42.9vw;
+}
+.star8{
+  top:37.8vh;
+  left:29.6vw;
+}
+.star9{
+  top:36vh;
+  left:38.7vw;
+}
+.star10{
+  top:49.6vh;
+  left:7vw;
+}
+.star11{
+  top:43.5vh;
+  left:16vw;
+}
+.star12{
+  top:18.4vh;
+  left:32vw;
+}
+
+#topic{
+  top:2.8vh;
+  right:7vh;
+  opacity:0;
+  display:none;
+  cursor:pointer;
+}
+#topic1{
+  top:8.5vh;
+  left:9.5vw;
+  opacity:0;
+}
+#topic2{
+  top:24.8vh;
+  left:17vw;
+  opacity:0;
+}
+#topic3{
+  top:25vh;
+  left:5.5vw;
+  opacity:0;
+}
+#topic4{
+  top:14.2vh;
+  left:18.5vw;
+  opacity:0;
+}
+#topic5{
+  top:6.5vh;
+  left:28.5vw;
+  opacity:0;
+}
+#topic6{
+  top:6vh;
+  left:34vw;
+  opacity:0;
+}
+#topic7{
+  top:18.5vh;
+  left:39.5vw;
+  opacity:0;
+}
+#topic8{
+  top:41vh;
+  left:28vw;
+  opacity:0;
+}
+#topic9{
+  top:36vh;
+  left:40.5vw;
+  opacity:0;
+}
+#topic10{
+  top:50vh;
+  left:9vw;
+  opacity:0;
+}
+#topic11{
+  top:40vh;
+  left:15vw;
+  opacity:0;
+}
+#topic12{
+  top:19vh;
+  left:29.5vw;
+  opacity:0;
+}
